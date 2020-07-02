@@ -14,7 +14,6 @@ end
 inject_into_file 'Gemfile', after: 'group :development, :test do' do
   <<-RUBY
   gem 'rspec-rails'
-  gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'dotenv-rails'
