@@ -22,6 +22,9 @@ inject_into_file 'Gemfile', after: 'group :development, :test do' do
 end
 
 gsub_file('Gemfile', /# gem 'redis'/, "gem 'redis'")
+gsub_file('Gemfile', /gem 'selenium-webdriver'/, "gem 'webdrivers', '~> 3.0'")
+gsub_file('Gemfile', /# Easy installation and use of chromedriver to run system tests with Chrome/, "")
+gsub_file('Gemfile', /gem 'chromedriver-helper'/, "")
 
 # Assets
 ########################################
