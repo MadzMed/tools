@@ -8,6 +8,8 @@ inject_into_file 'Gemfile', before: 'group :development, :test do' do
     gem 'autoprefixer-rails'
     gem 'font-awesome-sass'
     gem 'simple_form'
+    gem 'bootstrap'
+    gem 'bootstrap-sass', '~> 3.4.1'
   RUBY
 end
 
